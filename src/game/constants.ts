@@ -1,0 +1,39 @@
+export const PHYSICS = {
+  GRAVITY: -24,
+  WALK_SPEED: 6,
+  SPRINT_SPEED: 9.5,
+  GROUND_ACCEL: 50,
+  GROUND_DECEL: 42,
+  AIR_ACCEL: 14,
+  AIR_DECEL: 3,
+  JUMP_VELOCITY: 8.8,
+  MAX_FALL_SPEED: -40,
+  COYOTE_TIME: 0.1,
+  JUMP_BUFFER: 0.12,
+  FIXED_TIMESTEP: 1 / 120,
+  MAX_SUBSTEPS: 8,
+} as const
+
+export const PLAYER_DIMS = {
+  HEIGHT: 1.8,
+  RADIUS: 0.35,
+  MAX_STEP_HEIGHT: 0.5,
+} as const
+
+export const CAMERA = {
+  DISTANCE: 4.4,
+  MIN_DISTANCE: 2.2,
+  MAX_DISTANCE: 6.5,
+  HEIGHT: 1.55,
+  SHOULDER_OFFSET: 0.55,
+  SENSITIVITY: 0.0023,
+  PITCH_MIN: -1.2,
+  PITCH_MAX: 1.35,
+  FOV: 75,
+  SPRINT_FOV_BONUS: 6,
+} as const
+
+export const WORLD = {
+  ARENA_HALF: 30,
+  WALL_HEIGHT: 2.2,
+} as const
